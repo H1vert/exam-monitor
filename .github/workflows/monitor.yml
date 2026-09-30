@@ -1,0 +1,47 @@
+name: AF Edmonton exam monitor
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # каждые 5 минут (GitHub иногда запускает с задержкой)
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Только отправить тестовое сообщение в Telegram"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exam-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check exam pages
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EXAMS: ${{ vars.EXAMS }}   # по умолчанию TEF,TCF
+        run: python monitor.py ${{ inputs.test && '--test' || '' }}
+
+      - name: Save state and event log
+        if: ${{ !inputs.test }}
+        run: |
+          git config user.name "exam-monitor"
+          git config user.email "exam-monitor@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "update state" && git push)
