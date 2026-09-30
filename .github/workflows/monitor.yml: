@@ -1,0 +1,58 @@
+name: AF Edmonton exam monitor
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # запуск раз в 5 минут, внутри — 4 проверки с интервалом в минуту
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Только отправить тестовое сообщение в Telegram"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exam-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check exam pages (every minute)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EXAMS: ${{ vars.EXAMS }}   # по умолчанию TEF,TCF
+          TEST_MODE: ${{ inputs.test }}
+        run: |
+          if [ "$TEST_MODE" = "true" ]; then
+            python monitor.py --test
+            exit 0
+          fi
+          failed=0
+          for i in 1 2 3 4; do
+            python monitor.py || failed=1
+            if [ "$i" -lt 4 ]; then sleep 60; fi
+          done
+          exit $failed
+
+      - name: Save state and event log
+        if: ${{ !cancelled() && inputs.test != true }}
+        run: |
+          git config user.name "exam-monitor"
+          git config user.email "exam-monitor@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "update state" && git push)
