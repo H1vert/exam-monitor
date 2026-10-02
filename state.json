@@ -3,7 +3,7 @@
  "pages": {
   "TCF": {
    "fail_count": 0,
-   "hash": "148d2357c8dd4db3cc79720b240d5af0030faee9552614ee80e5189885bccdf4",
+   "hash": "31ded3d16695f739278e0626a498352e9c254fd36dd72bd101fe514cfafb80bb",
    "lines": [
     "Step 2 -",
     "Next sessions & registration dates",
@@ -189,12 +189,12 @@
     "Friday 16 Oct 2026 - 1:30pm▸4:30pm",
     "Oral",
     "To be confirmed",
-    "Sep 16 2026 12:36pm -",
-    "Sep 16 2026 1:36pm",
+    "Oct 2 2026 2:36pm -",
+    "Oct 2 2026 3:36pm",
     "Alliance Française of Edmonton - Kingsway",
-    "SOLD OUT!",
     "$400.00",
-    "Closed",
+    "Spots held",
+    "Spots are currently held. It'll be released if unfinished.",
     "TCF Canada - October 19",
     "Written",
     "Monday 19 Oct 2026 - 9:20am▸12:20pm",
@@ -260,13 +260,13 @@
      "title": "TCF Canada - October 16"
     },
     "TCF Canada - October 16* | Friday 16 Oct 2026 - 1:30pm▸4:30pm": {
-     "end": "2026-09-16T13:36:00-06:00",
+     "end": "2026-10-02T15:36:00-06:00",
      "open_alerted": true,
      "reminded": true,
      "schedule": "Friday 16 Oct 2026 - 1:30pm▸4:30pm",
-     "spots": null,
-     "start": "2026-09-16T12:36:00-06:00",
-     "status": "sold_out",
+     "spots": 0,
+     "start": "2026-10-02T14:36:00-06:00",
+     "status": "available",
      "title": "TCF Canada - October 16*"
     },
     "TCF Canada - October 19 | Monday 19 Oct 2026 - 9:20am▸12:20pm": {
