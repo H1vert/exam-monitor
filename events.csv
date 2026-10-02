@@ -35,3 +35,4 @@ logged_at,exam,event,title,schedule,window_start,window_end,status,spots
 2026-10-02 00:26,TEF,removed,TEF Canada - October 1,Thursday 01 Oct 2026 - 9:20am▸12pm,2026-09-21T09:55:00-06:00,2026-09-21T17:55:00-06:00,sold_out,
 2026-10-02 10:58,TEF,closed,TEF Canada - October 20 - Speaking and Listening*,Tuesday 20 Oct 2026 - 1:30pm▸2:10pm,2026-09-21T12:45:00-06:00,2026-09-21T16:00:00-06:00,closed,1
 2026-10-02 14:50,TCF,available,TCF Canada - October 16*,Friday 16 Oct 2026 - 1:30pm▸4:30pm,2026-10-02T14:36:00-06:00,2026-10-02T15:36:00-06:00,available,0
+2026-10-02 15:24,TCF,sold_out,TCF Canada - October 16*,Friday 16 Oct 2026 - 1:30pm▸4:30pm,2026-10-02T14:36:00-06:00,2026-10-02T15:36:00-06:00,sold_out,
