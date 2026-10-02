@@ -364,7 +364,7 @@
   },
   "TEF": {
    "fail_count": 0,
-   "hash": "7680644939890a0bd845781cf28a39d69507e2d8245d32aac41f20d45d408a04",
+   "hash": "4eef1af5d955d67beecb1650694429c63e0707d441d64fb6c49310f63988f1db",
    "lines": [
     "Step 2 -",
     "Next sessions & registration dates",
@@ -519,8 +519,7 @@
     "Oct 2 2026 10:00pm",
     "Alliance Française of Edmonton - Kingsway",
     "$390.00",
-    "Spots held",
-    "Spots are currently held. It'll be released if unfinished.",
+    "Book Now",
     "TEF Canada - October 27*",
     "Written",
     "Tuesday 27 Oct 2026 - 1:30pm▸4:10pm",
@@ -643,7 +642,7 @@
      "open_alerted": true,
      "reminded": true,
      "schedule": "Tuesday 27 Oct 2026 - 9:20am▸12:20pm",
-     "spots": 0,
+     "spots": 1,
      "start": "2026-10-02T10:30:00-06:00",
      "status": "available",
      "title": "TEF Canada - October 27"
