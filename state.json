@@ -364,7 +364,7 @@
   },
   "TEF": {
    "fail_count": 0,
-   "hash": "65a7288f81a29b34cb34c37e6ea4394f6d58b1a4475f7444ee577a4eb5cb4a89",
+   "hash": "9a867b7ec5d271587610156be408f83c573ad5263f63883cf200bea1a0cac779",
    "lines": [
     "Step 2 -",
     "Next sessions & registration dates",
@@ -487,7 +487,8 @@
     "Oct 2 2026 10:00pm",
     "Alliance Française of Edmonton - Kingsway",
     "$195.00",
-    "Book Now",
+    "Spots held",
+    "Spots are currently held. It'll be released if unfinished.",
     "TEF Canada - October 22",
     "Written",
     "Thursday 22 Oct 2026 - 9:20am▸12pm",
@@ -602,7 +603,7 @@
      "open_alerted": true,
      "reminded": true,
      "schedule": "Tuesday 20 Oct 2026 - 1:30pm▸2:10pm",
-     "spots": 1,
+     "spots": 0,
      "start": "2026-10-02T17:30:00-06:00",
      "status": "available",
      "title": "TEF Canada - October 20 - Speaking and Listening*"
