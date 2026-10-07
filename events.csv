@@ -52,3 +52,4 @@ logged_at,exam,event,title,schedule,window_start,window_end,status,spots
 2026-10-07 00:26,TEF,new,TEF Canada - November 5,Thursday 05 Nov 2026 - 9:20am▸12pm,2026-10-02T10:30:00-06:00,2026-10-02T23:00:00-06:00,closed,1
 2026-10-07 00:26,TEF,removed,TEF Canada - October 6,Tuesday 06 Oct 2026 - 9:20am▸12pm,2026-09-09T14:46:00-06:00,2026-09-09T22:45:00-06:00,sold_out,
 2026-10-07 00:26,TEF,removed,TEF Canada - October 6*,Tuesday 06 Oct 2026 - 1:30pm▸4:10pm,2026-09-11T10:45:00-06:00,2026-09-11T16:00:00-06:00,sold_out,
+2026-10-07 12:14,TCF,closed,TCF Canada - October 7,Wednesday 07 Oct 2026 - 9:20am▸12:20pm,2026-09-08T16:17:00-06:00,2026-09-08T17:17:00-06:00,closed,1
