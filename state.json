@@ -1,5 +1,5 @@
 {
- "last_run_date": "2026-10-06",
+ "last_run_date": "2026-10-07",
  "pages": {
   "TCF": {
    "fail_count": 0,
@@ -364,7 +364,7 @@
   },
   "TEF": {
    "fail_count": 0,
-   "hash": "37403a05a913ccff2488435135e554d24a7e8f0bc5d7ae6f900388455e2c4e68",
+   "hash": "3b07d63901c2fb8db17f1ed5081da02aac567cf0a8d8693dfe07c4158210bd74",
    "lines": [
     "Step 2 -",
     "Next sessions & registration dates",
@@ -401,28 +401,6 @@
     "Spots left",
     "Price",
     "Bookings",
-    "TEF Canada - October 6",
-    "Written",
-    "Tuesday 06 Oct 2026 - 9:20am▸12pm",
-    "Oral",
-    "To be confirmed",
-    "Sep 9 2026 2:46pm -",
-    "Sep 9 2026 10:45pm",
-    "Alliance Française of Edmonton - Kingsway",
-    "SOLD OUT!",
-    "$390.00",
-    "Closed",
-    "TEF Canada - October 6*",
-    "Written",
-    "Tuesday 06 Oct 2026 - 1:30pm▸4:10pm",
-    "Oral",
-    "To be confirmed",
-    "Sep 11 2026 10:45am -",
-    "Sep 11 2026 4:00pm",
-    "Alliance Française of Edmonton - Kingsway",
-    "SOLD OUT!",
-    "$390.00",
-    "Closed",
     "TEF Canada - October 8",
     "Written",
     "Thursday 08 Oct 2026 - 9:20am▸12pm",
@@ -564,9 +542,40 @@
     "SOLD OUT!",
     "$390.00",
     "Closed",
+    "TEF Canada - November 3 - Speaking and Listening*",
+    "Written",
+    "Tuesday 03 Nov 2026 - 1:30pm▸2:10pm",
+    "Oral",
+    "To be confirmed",
+    "Oct 1 2026 10:58am -",
+    "Oct 1 2026 4:00pm",
+    "Alliance Française of Edmonton - Kingsway",
+    "SOLD OUT!",
+    "$195.00",
+    "Closed",
+    "TEF Canada - November 5",
+    "Written",
+    "Thursday 05 Nov 2026 - 9:20am▸12pm",
+    "Oral",
+    "To be confirmed",
+    "Oct 2 2026 10:30am -",
+    "Oct 2 2026 11:00pm",
+    "Alliance Française of Edmonton - Kingsway",
+    "$390.00",
+    "Closed",
     "Show More"
    ],
    "sessions": {
+    "TEF Canada - November 3 - Speaking and Listening* | Tuesday 03 Nov 2026 - 1:30pm▸2:10pm": {
+     "end": "2026-10-01T16:00:00-06:00",
+     "open_alerted": true,
+     "reminded": true,
+     "schedule": "Tuesday 03 Nov 2026 - 1:30pm▸2:10pm",
+     "spots": null,
+     "start": "2026-10-01T10:58:00-06:00",
+     "status": "sold_out",
+     "title": "TEF Canada - November 3 - Speaking and Listening*"
+    },
     "TEF Canada - November 3 | Tuesday 03 Nov 2026 - 9:20am▸12:10pm": {
      "end": "2026-10-01T22:00:00-06:00",
      "open_alerted": true,
@@ -576,6 +585,16 @@
      "start": "2026-10-01T10:30:00-06:00",
      "status": "sold_out",
      "title": "TEF Canada - November 3"
+    },
+    "TEF Canada - November 5 | Thursday 05 Nov 2026 - 9:20am▸12pm": {
+     "end": "2026-10-02T23:00:00-06:00",
+     "open_alerted": true,
+     "reminded": true,
+     "schedule": "Thursday 05 Nov 2026 - 9:20am▸12pm",
+     "spots": 1,
+     "start": "2026-10-02T10:30:00-06:00",
+     "status": "closed",
+     "title": "TEF Canada - November 5"
     },
     "TEF Canada - October 13 | Tuesday 13 Oct 2026 - 9:20am▸12pm": {
      "end": "2026-09-16T16:05:00-06:00",
@@ -676,26 +695,6 @@
      "start": "2026-09-28T12:20:00-06:00",
      "status": "sold_out",
      "title": "TEF Canada - October 29*"
-    },
-    "TEF Canada - October 6 | Tuesday 06 Oct 2026 - 9:20am▸12pm": {
-     "end": "2026-09-09T22:45:00-06:00",
-     "open_alerted": true,
-     "reminded": true,
-     "schedule": "Tuesday 06 Oct 2026 - 9:20am▸12pm",
-     "spots": null,
-     "start": "2026-09-09T14:46:00-06:00",
-     "status": "sold_out",
-     "title": "TEF Canada - October 6"
-    },
-    "TEF Canada - October 6* | Tuesday 06 Oct 2026 - 1:30pm▸4:10pm": {
-     "end": "2026-09-11T16:00:00-06:00",
-     "open_alerted": true,
-     "reminded": true,
-     "schedule": "Tuesday 06 Oct 2026 - 1:30pm▸4:10pm",
-     "spots": null,
-     "start": "2026-09-11T10:45:00-06:00",
-     "status": "sold_out",
-     "title": "TEF Canada - October 6*"
     },
     "TEF Canada - October 8 | Thursday 08 Oct 2026 - 9:20am▸12pm": {
      "end": "2026-09-11T16:00:00-06:00",
